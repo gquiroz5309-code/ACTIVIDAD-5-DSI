@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación – Biblioteca UI</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+<body>
+
+<header class="hero">
+    <h1>Documentación Oficial – Biblioteca UI</h1>
+    <p>Guía completa de uso, instalación y personalización.</p>
+</header>
+
+<main class="container documentation">
+
+    <section>
+        <h2>1. Instalación</h2>
+        <p>Para usar esta biblioteca, importa los archivos CSS y JS así:</p>
+
+<pre><code>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+
+<script src="js/components.js"></script>
+</code></pre>
+    </section>
+
+    <section>
+        <h2>2. Variables globales</h2>
+        <p>En <strong>base.css</strong> se encuentran las variables modificables:</p>
+
+<pre><code>
+:root {
+    --color-primary: #4c6ef5;
+    --color-secondary: #20c997;
+    --color-dark: #212529;
+    --color-light: #f8f9fa;
+
+    --radius: 8px;
+    --shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    --font-main: "Poppins", sans-serif;
+}
+</code></pre>
+    </section>
+
+    <section>
+        <h2>3. Botones</h2>
+<pre><code>
+<button class="btn btn-primary">Botón primario</button>
+<button class="btn btn-secondary">Botón secundario</button>
+<button class="btn btn-disabled" disabled>Disabled</button>
+</code></pre>
+        <a href="../pages/botones.html" class="btn btn-primary">Ver demo</a>
+    </section>
+
+    <section>
+        <h2>4. Tarjetas</h2>
+<pre><code>
+<div class="card">
+   <img src="assets/img/ejemplo.jpg" alt="">
+   <h3>Título de tarjeta</h3>
+   <p>Contenido dentro de la tarjeta.</p>
+</div>
+</code></pre>
+        <a href="../pages/tarjetas.html" class="btn btn-primary">Ver demo</a>
+    </section>
+
+    <section>
+        <h2>5. Formularios</h2>
+<pre><code>
+<label class="form-label">Nombre</label>
+<input type="text" class="form-input">
+
+<label class="form-label">Seleccione</label>
+<select class="form-select"></select>
+</code></pre>
+        <a href="../pages/formularios.html" class="btn btn-primary">Ver demo</a>
+    </section>
+
+    <section>
+        <h2>6. Navbar</h2>
+<pre><code>
+<nav class="navbar">
+    <div class="navbar-logo">MiLogo</div>
+    <ul class="navbar-menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+    </ul>
+</nav>
+</code></pre>
+        <a href="../pages/navbar.html" class="btn btn-primary">Ver demo</a>
+    </section>
+
+    <section>
+        <h2>7. Modal</h2>
+<pre><code>
+<button class="btn btn-primary" data-open="modal1">Abrir modal</button>
+
+<div id="modal1" class="modal">
+   <div class="modal-content">
+       <h3>Título Modal</h3>
+       <p>Contenido dentro del modal.</p>
+       <button class="btn btn-secondary" data-close="">Cerrar</button>
+   </div>
+</div>
+</code></pre>
+        <a href="../pages/modal.html" class="btn btn-primary">Ver demo</a>
+    </section>
+
+    <section>
+        <h2>8. Tooltip & Alertas</h2>
+<pre><code>
+<span class="tooltip" data-tooltip="Mensaje del tooltip">Mover aquí</span>
+
+<div class="alert alert-success">Operación exitosa</div>
+<div class="alert alert-error">Ocurrió un error</div>
+</code></pre>
+        <a href="../pages/tooltip-alert.html" class="btn btn-primary">Ver demo</a>
+    </section>
+
+    <section>
+        <h2>9. Acordeón y Tabs</h2>
+<pre><code>
+<div class="accordion">
+    <button class="accordion-header">Título 1</button>
+    <div class="accordion-body">Contenido 1</div>
+</div>
+
+<div class="tabs">
+    <button class="tab active" data-tab="1">Tab 1</button>
+    <button class="tab" data-tab="2">Tab 2</button>
+
+    <div class="tab-content active" id="tab-1">Contenido tab 1</div>
+    <div class="tab-content" id="tab-2">Contenido tab 2</div>
+</div>
+</code></pre>
+
+        <a href="../pages/acordeon-tabs.html" class="btn btn-primary">Ver demo</a>
+    </section>
+
+</main>
+
+</body>
+</html>
